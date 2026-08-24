@@ -56,11 +56,11 @@ LUFFY/
 
 ### 📝 Complete TODO List
 
-- [ ] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
+- [x] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
 - [ ] **luffy/deepscaler/utils.py:46** - Add proper authentication handling
-- [ ] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits
-- [ ] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors
-- [ ] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation
+- [x] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits
+- [x] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors
+- [x] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation
 - [ ] **luffy/deepscaler/utils.py:50** - Add logging for API calls and errors
 - [ ] **luffy/deepscaler/utils.py:51** - Support batch processing for multiple prompts
 - [ ] **luffy/deepscaler/utils.py:52** - Add timeout configuration for API calls
@@ -74,7 +74,7 @@ LUFFY/
 - [ ] **luffy/deepscaler/utils.py:95** - Add support for different generation configurations
 - [ ] **luffy/test.py:1590** - add smaller page sizes when https://github.com/Dao-AILab/flash-attention/pull/824 is merged
 - [ ] **luffy/verl/examples/split_placement/split_monkey_patch.py:141** - make a canonical logger that supports various backend
-- [ ] **luffy/verl/tests/e2e/check_results.py:21** - this function needs error handling
+- [x] **luffy/verl/tests/e2e/check_results.py:21** - this function needs error handling
 - [ ] **luffy/verl/tests/model/test_transformer.py:22** - (sgm): add more models for test
 - [ ] **luffy/verl/tests/model/test_transformer.py:50** - (sgm): we can construct the position_ids_rmpad here
 - [ ] **luffy/verl/tests/model/test_transformer.py:111** - (sgm): we can construct the position_ids_rmpad here
@@ -110,12 +110,12 @@ LUFFY/
 - [ ] **luffy/verl/verl/models/llama/megatron/modeling_llama_megatron.py:588** - for better performance, the sp padding should be removed at each layer. Not sure the performance gap
 - [ ] **luffy/verl/verl/models/registry.py:21** - (sgm): HF may supported more than listed here, we should add more after testing
 - [ ] **luffy/verl/verl/models/transformers/llama.py:88** - These transpose are quite inefficient but Flash Attention requires the layout [batch_size, sequence_length, num_heads, head_dim]. We would need to refactor the KV cache
-- [ ] **luffy/verl/verl/protocol.py:114** - Implement batch dimension folding for efficient processing
+- [x] **luffy/verl/verl/protocol.py:114** - Implement batch dimension folding for efficient processing
 - [ ] **luffy/verl/verl/protocol.py:115** - Add validation for batch size compatibility
 - [ ] **luffy/verl/verl/protocol.py:116** - Handle edge cases where batch_size is not divisible by new_batch_size
 - [ ] **luffy/verl/verl/protocol.py:117** - Optimize memory usage during tensor reshaping
 - [ ] **luffy/verl/verl/protocol.py:118** - Add support for different tensor types and shapes
-- [ ] **luffy/verl/verl/protocol.py:131** - Implement batch dimension unfolding functionality
+- [x] **luffy/verl/verl/protocol.py:131** - Implement batch dimension unfolding functionality
 - [ ] **luffy/verl/verl/protocol.py:132** - Add support for variable batch dimensions
 - [ ] **luffy/verl/verl/protocol.py:133** - Optimize tensor view operations for performance
 - [ ] **luffy/verl/verl/protocol.py:134** - Handle non-tensor batch data reshaping properly
@@ -146,7 +146,6 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/worker.py:291** - (shengguangming): maybe we should also flag the megatron is initialized
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/arg_utils.py:109** - (shengguangming): delete the unused args
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/arg_utils.py:192** - (woosuk): Support fine-grained seeds (e.g., seed per request).
-- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/arg_utils.py:257** - spec config
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/config.py:136** - for multimodal model
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm.py:268** - (shengguangming): maybe we can hack the autoregressive logics without only apply post process for better performance
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_4_2/llm.py:272** - (sgm): we can optimize it by making the dataloader yield List[int] without padding.
@@ -202,7 +201,6 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/worker.py:29** - (sgm): check why vllm has similar file in vllm.model_executor.parallel_utils.parallel_state
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/worker.py:84** - we don't need driver
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/worker.py:103** - (sgm): set correct model runner class
-- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_5_4/worker.py:301** - (sgm): check whether need this
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:77** - add checkpoint manager
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:140** - (zhangchi.usc1992):
 - [ ] **luffy/verl/verl/trainer/fsdp_sft_trainer.py:159** - Implement model loading with proper initialization context
@@ -289,4 +287,3 @@ LUFFY/
 2. Implement the functionality
 3. Test your implementation
 4. Update this README when TODOs are completed
-
